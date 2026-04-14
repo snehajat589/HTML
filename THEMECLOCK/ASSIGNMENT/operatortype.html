@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experiment 10 - JS Variables & Operators (Console)</title>
+</head>
+<body>
+<script>
+console.log("=== Experiment 10: Variables & Operators ===\n");
+// 1. Variables
+var a = 10; // function-scoped
+let b = 20; // block-scoped
+const c = 30; // constant
+console.log("1. Variables:");
+console.log("var a =", a);
+console.log("let b =", b);
+console.log("const c =", c);
+console.log("\n");
+// 2. Swap Two Numbers
+let x = 5, y = 10;
+console.log("2. Swap Two Numbers:");
+console.log("Before swap: x =", x, ", y =", y);
+[x, y] = [y, x]; // Swap using destructuring
+console.log("After swap: x =", x, ", y =", y);
+console.log("\n");
+// 3. Arithmetic Operations
+let p = 15, q = 4;
+console.log("3. Arithmetic Operations:");
+console.log("p =", p, ", q =", q);
+console.log("Addition:", p + q);
+console.log("Subtraction:", p - q);
+console.log("Multiplication:", p * q);
+console.log("Division:", (p / q).toFixed(2));
+console.log("Modulus:", p % q);
+console.log("\n");
+// 4. Relational Operators
+let m = 15, n = 10;
+console.log("4. Relational Operators:");
+console.log("m =", m, ", n =", n);
+console.log("m > n :", m > n);
+console.log("m < n :", m < n);
+console.log("m >= n :", m >= n);
+console.log("m <= n :", m <= n);
+console.log("m == n :", m == n);
+console.log("m != n :", m != n);
+console.log("\n");
+// 5. Logical Operators
+let u = 10, v = 20;
+console.log("5. Logical Operators:");
+console.log("(u > 5 && v > 15) :", u > 5 && v > 15);
+console.log("(u > 15 || v > 15) :", u > 15 || v > 15);
+console.log("!(u > v) :", !(u > v));
+console.log("\n");
+console.log("=== End of Experiment 10 ===");
+</script>
+</body>
+</html>

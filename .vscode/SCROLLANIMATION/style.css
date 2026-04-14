@@ -1,0 +1,47 @@
+ body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+div {
+    width: 300px;
+    padding: 20px;
+    margin: 20px auto;
+    color: white;
+    border-radius: 10px;
+    animation-duration: 12s;
+    animation-fill-mode: forwards;
+}
+
+
+.circle { background: #1e3d92; animation-name: slideLeft; }
+.rectangle { background: #4fce55; animation-name: slideRight; }
+.square { background: #ee1f04; animation-name: slideLeft; }
+.triangle{ background: #fc1ec4; animation-name: slideRight; }
+.daimond { background: #2a9d8f; animation-name: slideLeft; }
+
+
+
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

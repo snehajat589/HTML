@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+html{
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+html.dark{
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.toggle{
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius:4px; 
+    padding: 8px 12px;
+    position: absolute;
+    top:100px;
+}
+
+.toggle:focus{
+    outline: none;
+}
+
+.clock-container{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NEEDLES */
+
+.needle-hour,
+.needle-minute,
+.needle-second{
+    background-color: var(--primary-color);
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+}
+
+.needle-hour{
+    height:60px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle-minute{
+    height:90px;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle-second{
+    height:100px;
+    background-color: blue;
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+/* CENTER POINT */
+
+.center-point{
+    background-color: green;
+    height:12px;
+    width:12px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.center-point::after{
+    content: "";
+    background-color: var(--primary-color);
+    height:5px;
+    width:5px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+/* DATE AND TIME */
+
+.date{
+    color:red;
+    font-size:28px;
+    letter-spacing:3px;
+    background-color: blue;
+    text-transform:capitalize;
+}
+
+.time{
+    font-size: 28px;
+}
+
+.date.circle{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+}
+
+/* CLOCK NUMBERS */
+
+.number{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    color: rgb(75, 0, 0);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* POSITIONING */
+
+.n1 { top: 22px; left: 188px; }
+.n2 { top: 60px; left: 228px; }
+.n3 { top: 126px; left: 242px; }
+.n4 { top: 192px; left: 228px; }
+.n5 { top: 230px; left: 188px; }
+.n6 { top: 242px; left: 126px; }
+.n7 { top: 230px; left: 62px; }
+.n8 { top: 192px; left: 28px; }
+.n9 { top: 126px; left: 14px; }
+.n10 { top: 60px; left: 28px; }
+.n11 { top: 22px; left: 68px; }
+.n12 { top: 10px; left: 126px; }

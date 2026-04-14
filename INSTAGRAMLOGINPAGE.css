@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.left {
+  height: 580px;
+  margin-right: 40px;
+}
+
+.login-box {
+  background-color: #ffffff;
+  border: 1px solid hsl(0, 0%, 100%);
+  width: 350px;
+  text-align: center;
+  padding: 30px;
+}
+
+
+
+.insta{
+  font-family: cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1953f4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.divider hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid hsla(0, 0%, 45%, 0.814);
+}
+
+.divider span {
+  margin: 0 10px;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+}
+
+.fb-login {
+  color: #1953f4;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot {
+  display: block;
+  margin-top: 15px;
+  color: #1953f4;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.signup-box {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+  margin-top: 10px;
+}
+
+.signup-box a {
+  color: #1953f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #000000;
+  font-size: 12px;
+  background-color: #ffffff;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #8e8e8e;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-bottom select {
+  border: none;
+  background: none;
+  color: #030303;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
