@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+     
+<body>
+    <nav class="main-navbar">
+    <div class="logo">Amazon</div>
+       <div class="search-box">
+        <select>
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+        </select>
+            <input type="text" placeholder="Search Amazon.in"      >
+            <button>search</button>   
+       
+    </div>
+
+    <!----rightside-->
+    <div class="nav-right">
+      
+        <a href="#">Hello,sign in </a>
+         <a href="#">Accounts&lists</a>
+        <a href="#">Returns & orders</a>
+        <a href="#">carts</a>
+     
+    </div>
+</nav>
+    </div>
+      <nav class="navbar1">
+        <div class="all-menu">
+       <button onclick="openMenu()">☰ All</button>
+        </div>
+        <div class="links">
+       <a href="#">MX Player</a>
+       <a href="#">sell</a>
+       <a href="#">Bestsellers</a>
+       <a href="#">Mobiles</a>
+       <a href="#">Today's Deals</a>
+        </div>
+         </nav> 
+         <!--------->
+         <div id="sidebar" class="sidebar">
+             <div class="profle">
+                <h3>hello.sign in</h3>
+             </div>
+             <!------->
+             <div class="menu section">
+             <h4>trending</h4>
+             <ul>
+             <li> <a href="#">best sellers</a></li>
+              <li><a href="#">New Releases</a></li>
+              <li><a href="#">Move and shakers</a></li>
+             </ul>
+            </div>
+             
+        <!-----section menu bar-->
+        <div class="menu section">
+            <h4>Digital and content devices</h4>
+            <ul>
+              
+               <li><a href="#">Echo and alex </a></li>
+               <li><a href="#">Fire TV </a></li>
+              <li><a href="#">kindle E readers and ebooks</a></li>
+               <li><a href="#">audible audioboks</a></li>
+              <li><a href="#">Amazon Prime video  </a></li>
+               <li><a href="#">Amazon prime Music</a></li>
+               </ul>
+         </div>
+         <!----------third container-->
+         <div class="menu baar">
+         <h4>shop by category</h4>
+            <ul>
+                <li><a href=#>Mobiles,Computers</a></li>
+                <li><a href=#>TV, Appliances,Electronics</a></li>
+                <li><a href=#>Men's Fashion</a></li>
+                <li><a href=#>Women's Fashion</a></li>
+                <li><a href=#>see all</a></li>
+            </ul>
+         </div>
+         <!------fourth containeer-->
+         <div class="menu baar">
+         <h4>Programs & features</h4>
+            <ul>
+                <li><a href=#>Gift Cards & Mobile recharges</a></li>
+                <li><a href=#>Amazon Launchpad</a></li>
+                <li><a href=#>Amazon Business </a></li>
+                <li><a href=#>Handloom and Handcrafts </a></li>
+                <li><a href=#>see all</a></li>
+            </ul>
+         </div>
+          <!------fifth containeer-->
+         <div class="menu baar">
+         <h4>Help & Settings </h4>
+            <ul>
+                <li><a href=#>Your Account </a></li>
+                <li><a href=#>Customer service</a></li>
+                <li><a href=#>Sign in </a></li>
+            
+            </ul>
+            <button onclick="closeMenu()">close</button>
+         </div>
+        
+
+         </div>
+         <section class="section1">
+        <div class="container2">
+            <div class="text">
+                <h1>ZERO referral fee on over 12.5 crore products
+ Register with a valid GSTIN and an active bank account to become an Amazon.in seller.</h1>
+                
+                <div class="btn-app">
+                   <button class="Start selling"> start selling</button>
+                  
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+
+</body>
+<script>
+    function openMenu(){
+        document.getElementById("sidebar").style.width="300px";
+    }
+    function closemenu(){
+        document.getElementById("sidebar").style.width="0";
+    }
+</script>
+</html>
